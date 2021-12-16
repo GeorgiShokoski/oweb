@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TV Shows</title>
+        <style type="text/css">
+        img{
+            margin: 100px;
+        }
+
+        body{
+            background-image: url("tvb.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0px;
+        }
+
+        p{
+            margin: 15px;
+            font-size: 120%;
+            font-style: Helvetica;
+        }
+
+        .topnav {
+    overflow: hidden;
+    background-color:#333;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color:darkcyan;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #ddd;
+    color:black;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .contact{
+      float:right;
+  }
+
+        .img_container{
+            text-align: center;
+        }
+
+        h1{
+            margin: 15px;
+        }
+        
+        .video_container{
+            text-align: center;
+        }
+
+        iframe{
+            margin:100px;
+        }
+        
+        .img_container a img{
+            transition: transform .2s;
+        }
+
+        .img_container a img:hover{
+            transform:scale(1.2);
+        }
+        </style>
+    </head>
+    <body>
+      <div class="topnav">
+        <a href="Home.html">Home</a>
+        <div class="dropdown" >
+          <button  class="dropbtn" >Favourites 
+          </button>
+          <div class="dropdown-content">
+            <a href="Music.html">Music</a>
+            <a href="TV Shows.html">TV Shows and Movies</a>
+          </div>
+        </div>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Poll.html">Poll</a>
+        <div class="contact">
+        <a href="Contact.html">Contact</a>
+      </div>
+      </div>
+
+
+        <h1>ТВ серии</h1>
+
+
+        <p>Во моето слободно време јас многу сакам да гледам филмови и серии. Секогаш ги следам сите нови излегувања и може да 
+            се наречам штребер на тема филмови и серии хаха. Повеќе преферирам да гледам серии, бидејќи повеќе се приврзувам со
+            приказната, како и со ликовите кои се во серијата. Како едни од моите омилени серии би можел да ги набројам:</p>
+
+
+        <div class="img_container">
+        <a href = "https://www.imdb.com/title/tt10048342", target="_blank"><img src="qb.jpg" width="300" height="300"></a>
+        
+        <a href = "https://www.imdb.com/title/tt0903747/", target="_blank"><img src="bb.jpg" width="300" height="300"></a>
+    
+        <a href = "https://www.imdb.com/title/tt0944947/", target="_blank"><img src="got.jpg" width="300" height="300"></a>
+        </div>
+         
+        <h1>Филмови</h1>
+        <p>Од страна на филмови, би ги издвоил:</p>
+        <div class=video_container>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VyHV0BRtdxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/V75dMMIW2B4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sGbxmsDFVnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+        </div>
+    </body>
+</html>

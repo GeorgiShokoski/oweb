@@ -7,13 +7,112 @@
     <style type = "text/css">
     body{
         background-image: url("bye.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:0px;
     }
+
+    .topnav {
+    overflow: hidden;
+    background-color:#333;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color:darkcyan;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #ddd;
+    color:black;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .contact{
+      float:right;
+  }
+  
+
+  a img{
+      width:40px;
+      height:40px;
+      margin:20px;
+      transition: transform .2s;
+  }
+  a img:hover{
+    transform: scale(1.2);
+  }
     </style>
     </head>
 
     <body>
-    <h1>Контакт</h1>
-    <p>Доколку имате прашања наменети за мене или идеи кои сакате да ги споделите во врска со веб страната, би ве замолил да ме
+      <div class="topnav">
+        <a href="Home.html">Home</a>
+        <div class="dropdown" >
+          <button  class="dropbtn" >Favourites 
+          </button>
+          <div class="dropdown-content">
+            <a href="Music.html">Music</a>
+            <a href="TV Shows.html">TV Shows and Movies</a>
+          </div>
+        </div>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Poll.html">Poll</a>
+        <div class="contact">
+        <a href="Contact.html">Contact</a>
+      </div>
+      </div>
+    <h1 style="margin: 10px">Контакт</h1>
+    <p style="margin: 10px">Доколку имате прашања наменети за мене или идеи кои сакате да ги споделите во врска со веб страната, би ве замолил да ме
         контактирате на следниве линкови:
     </p>
     <ul>
@@ -21,9 +120,6 @@
        <a href = "https://mk.linkedin.com/in/georgi-shokoski-76bb481b8" target = "_blank"><img src = "linkedin.png" width = 30></a>
        <a href = "https://www.instagram.com/wholelottagogo/" target = "_blank"><img src = "insta.png" width = 30></a>
         <p><li>E-mail: georgi_sokoski@hotmail.com</li></p>
-
-        <img src = "ty.jpg" width=1600 height = 650 style = "margin-left:-50px">
-
     </ul>
     </body>
 </html>

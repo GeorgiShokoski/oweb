@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="comments.js"></script>
+
+    <style type="text/css">
+    body{
+        background-image: url(galleryback.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin:0px;
+    }
+    
+
+    .topnav {
+        overflow: hidden;
+        background-color:#333;
+    }
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: #f2f2f2;
+        padding: 16px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .topnav a:hover, .dropdown:hover .dropbtn {
+        background-color:darkcyan;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #ddd;
+        color:black;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .contact{
+        float:right;
+    }
+
+    div.gallery {
+        margin: 150px;
+        border: 1px solid #ccc;
+        width: 150px;
+        float:left;
+    }
+
+    div.gallery img {
+        width: 300px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .container{
+        float:center;
+    }
+
+    .fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+    </style>
+
+    <script src="like.js"></script>
+    </head>
+    
+    
+    <body>
+        <div class="topnav">
+            <a href="Home.html">Home</a>
+            <div class="dropdown" >
+              <button  class="dropbtn" >Favourites 
+              </button>
+              <div class="dropdown-content">
+                <a href="Music.html">Music</a>
+                <a href="TV Shows.html">TV Shows and Movies</a>
+              </div>
+            </div>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Poll.html">Poll</a>
+            <div class="contact">
+            <a href="Contact.html">Contact</a>
+          </div>
+          </div>
+        <div class=container>
+        <div class="gallery">
+            <a target="_blank" href="paris.jpg"><img src="paris.jpg"></a>
+            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="sunset.jpg"><img src="sunset.jpg"></a>
+            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="catto.jpeg"><img src="catto.jpeg"></a>
+            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="northern.jpg"><img src="northern.jpg"></a>
+            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+          </div>
+        </div>
+          </body>
+          </html>
+    </body>
+</html>

@@ -4,39 +4,137 @@
     <head>
     <title>Home</title>
     <style type="text/css">
-        h1 {
-            color:powderblue;
+        body{
+            margin:0px;
+            background-image:url("homepage-background.png");
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        h1{
             font-style: Helvetica;
         }
 
         h2 {
-            color:powderblue;
             font-style: Helvetica;
         }
 
         p {
             font-size: 120%;
-            color:powderblue;
             font-style: Helvetica;
         }
         
-        body{
-            background-image:url("homepage-background.png")
-        }
-
         .center{
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 20%;
         }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        .topnav {
+    overflow: hidden;
+    background-color:#333;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color:darkcyan;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #ddd;
+    color:black;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .contact{
+      float:right;
+  }
     </style>
     </head>
 
     <body>
-    <h1>Добредојдовте на мојата веб страна!</h1>
-    <h2>Лични податоци</h2>
-    <p>Моето име е Георги Шокоски и моментално имам 20 години, а додека да завршам со изработката на овој проект, ќе имам 21. 
+      <div class="topnav">
+        <a href="Home.html">Home</a>
+        <div class="dropdown" >
+          <button  class="dropbtn" >Favourites 
+          </button>
+          <div class="dropdown-content">
+            <a href="Music.html">Music</a>
+            <a href="TV Shows.html">TV Shows and Movies</a>
+          </div>
+        </div>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Poll.html">Poll</a>
+        <div class="contact">
+        <a href="Contact.html">Contact</a>
+      </div>
+      </div>
+
+    <h1 style="margin: 10px">Добредојдовте на мојата веб страна!</h1>
+    <h2 style="margin: 10px">Лични податоци</h2>
+    <p style="margin: 20px">Моето име е Георги Шокоски и моментално имам 20 години, а додека да завршам со изработката на овој проект, ќе имам 21. 
        Јас сум од Прилеп и сум студент на електротехничкиот факултет во Скопје, Македонија. Се надевам дека ќе ви се допадне 
        мојата веб страна и ќе бидете дел од мојата авантура во совладувањето на Веб програмирање. :)
     </p>
