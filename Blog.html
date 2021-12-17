@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title> Hristijan Slavkoski Website</title>
+            <link rel = "stylesheet" type = "text/css" href = "styles1.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+            </script>
+            <script>
+                $(document).ready(function(){
+                  $("#myInputDisplay").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#submittedDiv *").filter(function() {
+                    $(this).toggle($(this).parent().text().toLowerCase().indexOf(value) > -1)
+                    });
+                  });
+                });
+                $(document).ready(function(){
+                  $("#myInputHide").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#submittedDiv *").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) == -1)
+                    });
+                  });
+                });
+            </script>
+
+            <style type="text/css">
+                body{
+                    margin:0px;
+                }
+                
+                .topnav {
+        overflow: hidden;
+        background-color:#333;
+    }
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: #f2f2f2;
+        padding: 16px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .topnav a:hover, .dropdown:hover .dropbtn {
+        background-color:darkcyan;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #ddd;
+        color:black;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .contact{
+        float:right;
+    }
+
+    .list{
+    font-family: 'Brush Script MT', cursive, sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#b1{
+    min-height: 10vh;
+    max-height: 10vh;
+    min-width: 9vw;
+    max-width: 9vw;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.webprogrammingimg{
+    justify-content: center;
+    display:inline;
+    position:relative;
+    object-fit:fill;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 49%;
+    height: auto;
+  }
+
+  .galleryimage{
+    justify-content: center; 
+    background-color: linear-gradient(rgb(189, 170, 3),rgb(255, 236, 68));
+    object-fit: fill;
+    width: 99%;
+    height: 60%;
+    padding: 0;
+    border: 0.5em solid gray;
+  }
+
+
+.contacticons{
+    transition: transform .1s ease-in;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+.contacticons:hover{
+    transform: scale(1.05);
+}
+
+.biophoto{
+    display: inline-block;
+}
+
+.biophotop {
+    position:absolute;
+    background-color:rgb(255, 204, 108);
+    margin-top: 5vh;
+    margin-left: 4em;
+    margin-right: 110vh;
+    padding: 30px;
+    border-radius: 1cm;
+}
+
+.boxbio{
+    display:inline-block;
+    vertical-align: top;
+}
+
+.boxbiop {
+    background-color:rgb(255, 204, 108);
+    display: inline-block;
+    margin-top: 5vh;
+    margin-left: 100vh;
+    margin-right: 5em;
+    padding: 30px;
+    border-radius: 1cm;
+    
+}
+
+.biophoto:hover{
+    box-shadow: 0 0 0 0;
+}
+
+.biophotop:hover{
+    box-shadow: 0 0 0 0;
+}
+
+.homediv{
+    vertical-align:top;
+}
+
+.boxcontact{
+    justify-items: center;
+    text-align: center;
+}
+
+.boxcontactp {
+    justify-items: center;
+    background-color:rgb(255, 204, 108);
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+    border-radius: 1cm;
+}
+
+.boxfood{ 
+    justify-items: center;
+    text-align: center;
+}
+
+.boxfoodp {
+    justify-items: center;
+    background-color:rgb(255, 204, 108);
+    margin: auto;
+    margin-top: 2vh;
+    width: 50%;
+    padding: 30px;
+    border-radius: 1cm;
+}
+
+.pizzaimg{
+    text-align: center;
+    background-color:rgb(255, 204, 108);
+    margin: auto;
+    margin-top: 1vh;
+    width: 50%;
+    padding: 30px;
+    border-radius: 1cm;
+}
+
+.boxmovie{
+    justify-items: center;
+    text-align: center;
+}
+
+.boxmoviep {
+    justify-items: center;
+    background-color:rgb(255, 204, 108);
+    margin: auto;
+    margin-top: 2vh;
+    width: 50%;
+    padding: 30px;
+    border-radius: 1cm;
+}
+
+.movieimg{
+    text-align: center;
+    background-color:rgb(255, 204, 108);
+    margin: auto;
+    margin-top: 1vh;
+    width: 50%;
+    padding: 30px;
+    border-radius: 1cm;
+}
+
+.boxmusic{
+    justify-items: center;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.boxmusicp {
+    justify-items: center;
+    background-color:rgb(255, 204, 108);
+    margin: auto;
+    margin-top: 2vh;
+    width: 50%;
+    padding: 30px;
+    border-radius: 1cm;
+}
+
+.survey{
+    margin-left: 3vh;
+    margin-top: 3vh;
+}
+
+.Givefeedback{
+    font-size: x-large;
+}
+
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #ff3300;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+input[type='checkbox']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 0px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='checkbox']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 1px;
+    position: relative;
+    background-color: #ff3300;
+    content: '';
+    font-size: 1em;
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+input[type=submit] {
+    font-family: 'Brush Script MT', cursive, sans-serif;
+    padding:5px 15px; 
+    background:rgba(1, 1, 26, 0.082);
+    color:rgb(0, 0, 0); 
+    border-radius: 0.5em;
+    border-width:0.2em;
+    border-color: black;
+    cursor:pointer;
+    border-radius: 5px; 
+}
+
+input[type=submit]{
+    font-size: larger;
+}
+
+input[type=submit]:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.904); 
+}
+
+input[type=text]{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.paddingsurvey{
+    padding-bottom: 1vh;
+}
+
+#images {
+    float: top;
+    width: 397px;
+    height: 400px;
+    display: block;
+}
+
+#table1 {
+    border-spacing: 5vw;
+    table-layout: fixed;
+}
+
+#picdesc {
+    min-width: 397px;
+    width: 397px;
+    min-height: 100px;
+    height: 100px;
+    border: solid 2px black;
+    background-color:rgb(255, 204, 108);
+}
+
+#tabledata {
+    
+    transition: transform .2s ease-in;
+    word-wrap: break-word;
+    max-width: 397px;
+}
+
+#tabledata:hover .invistext1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+#tabledata:hover .invistext2  {
+    visibility: visible;
+    opacity: 1;
+}
+
+#desc {
+    max-width: 397px;
+    font-weight: lighter;
+}
+
+.like {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 500;
+    margin-left: 330px;
+    transition: transform .1s ease-in;
+    cursor: pointer;
+}
+
+.liketext {
+    scale: 1.6;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 10000;
+    margin-left: 343px;
+    margin-top: 15px;
+    transition: transform, opacity .1s ease-in;
+    font-style: oblique;
+    pointer-events: none;
+}
+
+.like:hover ~ .liketext {
+    visibility: visible;
+    opacity: 1;
+} 
+
+.c1{
+    word-wrap: break-word;
+}
+
+#likeCounter1{
+    font-size: 40px;
+    float: right;
+    margin-right: 90px;
+}
+
+#likeCounter2{
+    font-size: 40px;
+    float: right;
+    margin-right: 90px;
+}
+
+#likeCounter3{
+    font-size: 40px;
+    float: right;
+    margin-right: 90px;
+}
+
+.invistext {
+    background-color: rgba(255, 255, 255, 0.733);
+    border-radius: 18%;
+    margin-top: 100px;
+    margin-left: 125px;
+    visibility:hidden ;
+    opacity: 0;
+    transition: transform, opacity .2s ease-in;
+    position: absolute;
+    z-index: 999;
+}
+
+#tabledata:hover .invistext {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.pos {
+    margin-left: 30.4%;
+}
+
+.boxblogp {
+    justify-items: center;
+    background-color:rgb(114, 20, 238);
+    margin: auto;
+    margin-top: 3vh;
+    width: 50%;
+    padding: 30px;
+    border-radius: 1cm;
+}
+
+.blog-f{
+    display: block;
+    margin: 10px;
+}
+
+#blog-form{
+    display:block;
+    width: 30%;
+}
+
+.writing{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 350px;
+    width: 300px;
+    border: solid 2px rgb(188, 143, 184); 
+    border-radius: 1cm;
+    padding: 30px;
+}
+
+#elBlog{
+    display:flex;
+    margin-top: 50px;
+}
+
+#submittedDiv{ 
+    background-color: rgb(46, 25, 233);
+    border-radius: 1cm;
+    padding: 20px;
+    width: 30%;
+}
+
+#searchDiv{ 
+    height: 5%;
+    background-color: rgb(58, 12, 224);
+    border-radius: 1cm;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 10px;
+}
+#SearchSub {
+    display: block;
+    margin-left: 60%;
+    width: 80%;
+    position: absolute;
+}
+
+#submit{
+    display:block;
+    margin:20px;
+}
+            </style>
+    </head>
+
+    <body onload="onLoad()">
+        <div class="topnav">
+            <a href="Home.html">Home</a>
+            <div class="dropdown" >
+              <button  class="dropbtn" >Favourites 
+              </button>
+              <div class="dropdown-content">
+                <a href="Music.html">Music</a>
+                <a href="TV Shows.html">TV Shows and Movies</a>
+              </div>
+            </div>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Poll.html">Poll</a>
+            <a href="Blog.html">Blog</a>
+            <div class="contact">
+            <a href="Contact.html">Contact</a>
+          </div>
+          </div>
+
+        <div id="elBlog">
+            <h2 style="text-align: center;"  >
+                <p class="boxblogp">
+                    What's on your mind?
+                    <br>
+                </p></h3>
+
+                <form id="blog-form" onsubmit="blogPost()">
+                    <textarea id="blogTxt" class="writing" placeholder="Write short story."></textarea>
+                    <input id="blogAlias" type="text" class="blog-f" name="alias" placeholder="Author">
+                    <input id="blogSbj" type="text" class="blog-f" name="subject" placeholder="Subject">
+                    <input id="blogDate" type="date" class="blog-f" name="date-w" value="xxxx-xx-xx" min="2020-01-01"
+                        max="2022-12-31">
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+                <div id="SearchSub">
+                    <div id="searchDiv">
+                        <input id="myInputDisplay" type="text" placeholder="Display Searched">
+                        <input id="myInputHide" type="text" placeholder="Hide Searched">
+                    </div>
+
+                    <div id="submittedDiv">
+    
+                    </div>
+
+                </div>
+        </div>
+
+
+        <script>
+            const onLoad = () => {
+                let arr = []
+                arr = JSON.parse(localStorage.getItem('posts')) || [];
+                let tempString = "";
+                arr.forEach(element => {
+                    tempString += element
+                    //tempString += "<hr>"
+                })
+            document.getElementById("submittedDiv").innerHTML = tempString;
+            }
+            
+            function blogPost() {
+                event.preventDefault()
+                let blogTxt = document.getElementById("blogTxt").value
+                let blogAlias = document.getElementById("blogAlias").value
+                let blogSbj = document.getElementById("blogSbj").value
+                let submittedDiv = document.getElementById("submittedDiv")
+                let posts = JSON.parse(localStorage.getItem('posts')) || [];
+                let blogDate = document.getElementById("blogDate").value
+                
+                let htmlString = "<div><h2 id='subject'> Title:" + blogSbj + "</h2>" + 
+                '<p id="content" style="word-wrap: break-word;">' + blogTxt + "</p>" + 
+                "<p id='ime'> Written by: " + blogAlias + "</p>" + "<p id='date'> Date:" + blogDate + "</p><hr></div>"
+
+                posts.push(htmlString)
+                localStorage.setItem('posts', JSON.stringify(posts))
+                let newString = "";
+                posts.forEach(element => {
+                    newString += element
+                    //newString += "<hr>"
+                });
+                submittedDiv.innerHTML = newString
+                console.log("posts = " + posts)
+            }
+            </script>
+    </body>
+</html>
