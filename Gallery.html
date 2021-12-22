@@ -5,7 +5,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="comments.js"></script>
+    <script src="comment.js"></script>
+
 
     <style type="text/css">
     body{
@@ -109,7 +110,20 @@
 }
 
 .fa:hover {
-  color: darkblue;
+  color: rgb(139, 0, 0);
+}
+
+input.com {
+  opacity: 0.8;
+  background-color: rgb(22, 33, 199);
+  height: 25px;
+  width: 356px;
+  color: beige;
+  border-color: 1px rgb(7, 90, 245);
+  border-style: double;
+}
+input.com:hover {
+  opacity: 1.0;
 }
     </style>
 
@@ -130,6 +144,7 @@
             </div>
             <a href="Gallery.html">Gallery</a>
             <a href="Poll.html">Poll</a>
+            <a href="Blog.html">Blog</a>
             <div class="contact">
             <a href="Contact.html">Contact</a>
           </div>
@@ -138,21 +153,49 @@
         <div class="gallery">
             <a target="_blank" href="paris.jpg"><img src="paris.jpg"></a>
             <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+            <div id="box">
+              <p id="comment1"></p>
+              <form onsubmit="comment1()">
+                  <input class="com" type="text" id="input1" placeholder="Enter comment" autocapitalize="off" />
+                  <input class="com" type="submit" id="submitbutton" value="Add comment">
+              </form>
+          </div>
           </div>
           
           <div class="gallery">
             <a target="_blank" href="sunset.jpg"><img src="sunset.jpg"></a>
             <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+            <div id="box">
+              <p id="comment2"></p>
+              <form onsubmit="comment2()">
+                  <input class="com" type="text" id="input2" placeholder="Enter comment" autocapitalize="off" />
+                  <input class="com" type="submit" id="submitbutton" value="Add comment">
+              </form>
+          </div>
           </div>
           
           <div class="gallery">
             <a target="_blank" href="catto.jpeg"><img src="catto.jpeg"></a>
             <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+            <div id="box">
+              <p id="comment3"></p>
+              <form onsubmit="comment3()">
+                  <input class="com" type="text" id="input3" placeholder="Enter comment" autocapitalize="off" />
+                  <input class="com" type="submit" id="submitbutton" value="Add comment">
+              </form>
+          </div>
           </div>
           
           <div class="gallery">
             <a target="_blank" href="northern.jpg"><img src="northern.jpg"></a>
             <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+            <div id="box">
+              <p id="comment4"></p>
+              <form onsubmit="comment4()">
+                  <input class="com" type="text" id="input4" placeholder="Enter comment" autocapitalize="off" />
+                  <input class="com" type="submit" id="submitbutton" value="Add comment">
+              </form>
+          </div>
           </div>
         </div>
           </body>
